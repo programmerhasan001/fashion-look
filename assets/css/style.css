@@ -49,6 +49,10 @@ html, body {
     color: #333;
 }
 
+#left-top-right h6 {
+    display: none;
+}
+
 #left-center {
     grid-column: 1 / 3;
     padding: 40px;
@@ -106,4 +110,86 @@ html, body {
     font-size: 40px;
     color: white;
     font-weight: 100;
+}
+
+
+@media (max-width: 600px) {
+    #main {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60px 34% 8%;
+    }
+
+    #left-top-left {
+        padding: 20px;
+    }
+
+    #square {
+        width: 15px;
+        height: 15px;
+    }
+
+    #left-top-right {
+        padding: 20px;
+    }
+
+    #left-top-right h4 {
+        display: none;
+    }
+
+    #left-top-right h5 {
+        display: none;
+    }
+
+    #left-top-right h6 {
+        display: block;
+        text-align: right;
+    }
+
+    #left-top-right h6 {
+        font-size: 20px;
+    }
+
+    #left-center {
+        padding: 10px 20px;
+    }
+
+    #left-center h1 {
+        font-size: 15.5vw;
+        line-height: 14.5vw;
+    }
+
+    #left-center h1:nth-child(2n) {
+        text-align: right;
+    }
+
+    #left-bottom {
+        padding: 0 20px;
+    }
+
+    #left-bottom p {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    #arrow {
+        top: 54%;
+        left: 50%;
+        padding: 10px;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    #arrow i {
+        font-size: 20px;
+    }
+
+    #right {
+        grid-column: 1 / 3;
+        grid-row: 4;
+        padding: 20px;
+        padding-right: 20px;
+    }
+
+    #right video {
+        height: 42vh;
+    }
 }
