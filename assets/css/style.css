@@ -76,7 +76,34 @@ html, body {
 }
 
 #right {
-    background: blueviolet;
     grid-column: 3;
     grid-row: 1 / 4;
+    padding: 40px;
+    padding-right: 150px;
+}
+
+#right video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#arrow {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D2422F;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#arrow i {
+    font-size: 40px;
+    color: white;
+    font-weight: 100;
 }
